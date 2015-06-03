@@ -6,5 +6,5 @@ angular.module('clientApp')
       restrict: 'E',
       templateUrl: 'views/shared/navbar.html',
       controller: 'NavigationCtrl'
-    }
+    };
   });
