@@ -10,6 +10,7 @@
  */
 angular
   .module('clientApp', [
+    'config',
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -30,6 +31,10 @@ angular
       .when('/signup', {
         templateUrl: 'views/signup.html',
         controller: 'SignupCtrl'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
       })
       .otherwise({
         redirectTo: '/'
