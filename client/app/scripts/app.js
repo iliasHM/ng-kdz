@@ -18,6 +18,10 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+  .config(['$sceDelegateProvider', function($sceDelegateProvider) {
+    $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://localhost:3000/**']);
+     }])
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
